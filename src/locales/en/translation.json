@@ -33,7 +33,8 @@
 	},
 	"projects": {
 		"1": {
-			"title": "My Website",
+			"title": "Portfolio",
+			"title-details": "Portfolio",
 			"logo": "my-website.gif",
 			"summary": " This website that I built to showcase my skills and present my profile.",
 			"description": "I wanted to <strong>build a website</strong> that would <strong>represent me</strong> and <strong>showcase</strong> my skills</strong> and <strong>my profile</strong>. I decided to <strong>code</strong> my <strong>own website from scratch</strong>, using <strong>React</strong>, <strong>Vite</strong> and <strong>TypeScript</strong>.",
@@ -42,6 +43,7 @@
 		},
 		"2": {
 			"title": "TaskApp",
+			"title-details": "TaskApp",
 			"logo": "task-app.gif",
 			"summary": "I crafted a task application allowing smooth daily organization.",
 			"description": "I decided to <strong>code a task app</strong> that would be <strong>simple</strong>, <strong>straightforward</strong> and <strong>efficient</strong>. I used <strong>Node.js</strong>, <strong>Express.js</strong> and <strong>MySQL2</strong> to <strong>build it from scratch</strong>.",

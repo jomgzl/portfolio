@@ -1,6 +1,6 @@
 // import { useParams } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-import "../CSS/ProjectDetails.css";
+import styles from "./ProjectDetails.module.css";
 import { useTranslation, Trans } from "react-i18next";
 
 function ProjectDetails() {
@@ -53,23 +53,25 @@ function ProjectDetails() {
 	// 	});
 
 	return (
-		<div className="container-general-project-details">
-			<div className="container container-project-details">
-				<div className="project-details-header">
-					<h1 className="project-details-title">
+		<div className={styles.containerGeneralProjectDetails}>
+			<div className={`container ${styles.containerProjectDetails}`}>
+				<div className={styles.projectDetailsHeader}>
+					<h1 className={styles.projectDetailsTitle}>
 						{t(`projects.${id}.title-details`)}
 					</h1>
 					<img
-						className="project-details-image"
+						className={styles.projectDetailsImage}
 						src={`/${logo}`}
 						alt="Project Logo"
 					/>
 				</div>
-				<p className="project-details-paragraph">
+				<p className={styles.projectDetailsParagraph}>
 					<Trans i18nKey={`projects.${id}.description`} />
 				</p>
-				<button type="button" className="project-source-button">
-					<a href={github}>{"</> Sources"}</a>
+				<button type="button" className={styles.projectSourceButton}>
+					<a href={github} target="_blank" rel="noopener noreferrer">
+						{"</> Sources"}
+					</a>
 				</button>
 			</div>
 		</div>

@@ -1,0 +1,66 @@
+.containerGeneralAbout {
+	background-color: var(--secondary-color);
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding-left: clamp(
+		var(--pad-min-left),
+		var(--pad-fluid-left),
+		var(--pad-max-left)
+	);
+	padding-right: clamp(
+		var(--pad-min-right),
+		var(--pad-fluid-right),
+		var(--pad-max-right)
+	);
+}
+
+.containerAboutMe {
+	display: flex;
+	padding: 5% 25%;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+
+.boxAbout {
+	opacity: 0;
+	transform: translateY(-10px);
+	transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.animateAbout {
+	opacity: 1;
+	transform: translateY(5px);
+}
+
+.about {
+	display: flex;
+	flex-direction: column;
+	max-width: 63%;
+}
+
+.aboutTitle {
+	display: block;
+	font-size: clamp(var(--title-min), var(--title-fluid), var(--title-max));
+	font-weight: bold;
+	color: white;
+	margin: 0;
+	margin-bottom: 3rem;
+}
+
+.aboutParagraph {
+	font-size: clamp(
+		var(--about-para-min),
+		var(--about-para-fluid),
+		var(--about-para-max)
+	); /* or use separate values if needed */
+	color: white;
+}
+
+p {
+	margin: 0;
+}
+
+.bold {
+	font-weight: bold;
+}

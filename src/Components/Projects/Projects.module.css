@@ -1,0 +1,35 @@
+.containerGeneralProjects {
+	background-color: var(--primary-color, #e7f1f9);
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	/* Use global container padding tokens */
+	padding-left: clamp(
+		var(--pad-min-left),
+		var(--pad-fluid-left),
+		var(--pad-max-left)
+	);
+	padding-right: clamp(
+		var(--pad-min-right),
+		var(--pad-fluid-right),
+		var(--pad-max-right)
+	);
+}
+
+.projectsContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* Percent-based padding can remain as-is if it fits your design */
+	padding: 3% 25%;
+}
+
+.projectsTitle {
+	display: block;
+	font-size: clamp(var(--title-min), var(--title-fluid), var(--title-max));
+	font-weight: bold;
+	color: black;
+	margin-block-start: 0.83em;
+	margin-block-end: 0.83em;
+	align-self: flex-start;
+}

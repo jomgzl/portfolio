@@ -1,0 +1,76 @@
+.containerGeneralSkills {
+	background-color: var(--primary-color, #e7f1f9);
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding-left: clamp(
+		var(--pad-min-left),
+		var(--pad-fluid-left),
+		var(--pad-max-left)
+	);
+	padding-right: clamp(
+		var(--pad-min-right),
+		var(--pad-fluid-right),
+		var(--pad-max-right)
+	);
+}
+
+.containerCardList {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	/* Keeping percentages for inner padding as in your original design; these can also be tokenized if needed */
+	padding: 3% 25%;
+}
+
+.boxCardList {
+	opacity: 0;
+	transform: translateY(-10px);
+	transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.animateCardList {
+	opacity: 1;
+	transform: translateY(5px);
+}
+
+.skillsTitle {
+	display: block;
+	font-size: clamp(var(--title-min), var(--title-fluid), var(--title-max));
+	font-weight: bold;
+	margin-block-start: 0.83em;
+	margin-block-end: 0.83em;
+	width: 100%;
+}
+
+.cards {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: clamp(var(--gap-min), var(--gap-fluid), var(--gap-max));
+	width: 100%;
+}
+
+/* Hover Effects – assuming CSS Modules with :global() support */
+.cards:hover :global(.cardCustom .inner) {
+	transform: rotateY(180deg);
+}
+
+.cards:hover :global(.cardCustom:nth-child(1) .inner) {
+	transition-delay: 0s;
+}
+
+.cards:hover :global(.cardCustom:nth-child(2) .inner) {
+	transition-delay: 0.2s;
+}
+
+.cards:hover :global(.cardCustom:nth-child(3) .inner) {
+	transition-delay: 0.3s;
+}
+
+@media (min-width: 1025px) {
+	.cards {
+		flex-direction: row;
+	}
+}

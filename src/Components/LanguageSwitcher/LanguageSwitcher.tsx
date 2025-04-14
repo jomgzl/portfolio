@@ -1,4 +1,4 @@
-import "../CSS/LanguageSwitcher.css";
+import styles from "./LanguageSwitcher.module.css";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 
@@ -13,10 +13,10 @@ const LanguageSwitcher = () => {
 	const [frIsClicked, setFrIsClicked] = useState(false);
 
 	return (
-		<div className="language-switcher">
+		<div className={styles.languageSwitcher}>
 			<button
-				className={`language-buttons ${
-					enIsClicked && !frIsClicked ? "language-button-clicked" : ""
+				className={`${styles.languageButtons} ${
+					enIsClicked && !frIsClicked ? styles.languageButtonClicked : ""
 				}`}
 				onClick={() => {
 					changeLanguage("en");
@@ -27,8 +27,8 @@ const LanguageSwitcher = () => {
 				EN
 			</button>
 			<button
-				className={`language-buttons ${
-					frIsClicked ? "language-button-clicked" : ""
+				className={`${styles.languageButtons} ${
+					frIsClicked ? styles.languageButtonClicked : ""
 				}`}
 				onClick={() => {
 					changeLanguage("fr");

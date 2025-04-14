@@ -1,0 +1,98 @@
+.containerGeneralProjectDetails {
+	background-color: var(--project-bg, #e7f1f9);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	/* Using tokens for horizontal padding (percentages are used directly) */
+	padding-top: var(--project-details-pad-top);
+	padding-left: var(--project-details-pad-left);
+	padding-right: var(--project-details-pad-right);
+	padding-bottom: var(--project-details-pad-bottom);
+}
+
+.containerProjectDetails {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: var(--project-details-content-width);
+}
+
+.projectDetailsHeader {
+	display: flex;
+	align-items: center;
+	gap: clamp(
+		var(--project-details-header-gap-min),
+		var(--project-details-header-gap-fluid),
+		var(--project-details-header-gap-max)
+	);
+}
+
+.projectDetailsTitle {
+	display: block;
+	font-size: clamp(
+		var(--project-details-title-font-min),
+		var(--project-details-title-font-fluid),
+		var(--project-details-title-font-max)
+	);
+	font-weight: bold;
+	margin: 0;
+	margin-bottom: 1rem;
+}
+
+.projectDetailsImage {
+	width: clamp(
+		var(--project-details-image-size-min),
+		var(--project-details-image-size-fluid),
+		var(--project-details-image-size-max)
+	);
+	height: clamp(
+		var(--project-details-image-size-min),
+		var(--project-details-image-size-fluid),
+		var(--project-details-image-size-max)
+	);
+	mix-blend-mode: multiply;
+}
+
+.projectDetailsParagraph {
+	font-size: clamp(
+		var(--project-details-desc-font-min),
+		var(--project-details-desc-font-fluid),
+		var(--project-details-desc-font-max)
+	);
+	width: var(--project-details-desc-width);
+	line-height: var(--project-details-desc-line-height);
+}
+
+.projectSourceButton {
+	font-size: clamp(
+		var(--project-source-button-font-min),
+		var(--project-source-button-font-fluid),
+		var(--project-source-button-font-max)
+	);
+	font-weight: bold;
+	border: transparent;
+	border-radius: var(--project-source-button-border-radius);
+	padding: var(--project-source-button-pad-vertical)
+		var(--project-source-button-pad-horizontal);
+	background-color: black;
+	color: white;
+	width: fit-content;
+	margin-top: var(--project-source-button-margin-top);
+}
+
+p {
+	margin: 0;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+@media (min-width: 1025px) {
+	.containerGeneralProjectDetails {
+		height: 100vh;
+		padding-top: 0%;
+		padding-bottom: 0%;
+	}
+}

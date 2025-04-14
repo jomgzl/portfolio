@@ -1,5 +1,5 @@
 import Card from "./Card.tsx";
-import "../CSS/CardList.css";
+import styles from "./CardList.module.css";
 import { useState, useEffect } from "react";
 import { useTranslation, Trans } from "react-i18next";
 
@@ -28,16 +28,16 @@ function CardList({ listOfSkills }: Props) {
 	}, []);
 
 	return (
-		<div id="skills" className="container-general-skills">
+		<div id="skills" className={styles.containerGeneralSkills}>
 			<div
-				className={`container container-card-list box-card-list ${
-					show ? "animate-card-list" : ""
-				}`}
+				className={`container ${styles.containerCardList} ${
+					styles.boxCardList
+				} ${show ? styles.animateCardList : ""}`}
 			>
-				<h1 className="skills-title">
+				<h1 className={styles.skillsTitle}>
 					<Trans i18nKey="skills" />
 				</h1>
-				<div className="cards">
+				<div className={styles.cards}>
 					{listOfSkills.map((data) => (
 						<Card key={data.id} {...data}></Card>
 					))}

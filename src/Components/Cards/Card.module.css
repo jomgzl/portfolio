@@ -1,0 +1,189 @@
+.cardCustom {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	min-height: 20rem;
+	background-color: var(--card-bg, #fff8f0);
+	border-radius: var(--card-border-radius, 1.375rem);
+	padding-bottom: clamp(
+		var(--card-pad-bottom-min),
+		var(--card-pad-bottom-fluid),
+		var(--card-pad-bottom-max)
+	);
+	transition-duration: 0.3s;
+}
+
+.cardCustomHover {
+	transform: translateY(var(--card-hover-offset, -0.625rem));
+	transition-duration: 0.3s;
+	box-shadow: 0px -1px 5px lightgray, -10px 10px 10px gray,
+		10px 10px 10px gray;
+	cursor: pointer;
+}
+
+.inner {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	transform-style: preserve-3d;
+	transition: transform 0.5s;
+}
+
+.flip {
+	transform: rotateY(180deg);
+}
+
+.frontCard {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	padding-top: clamp(
+		var(--card-header-pad-min),
+		var(--card-header-pad-fluid),
+		var(--card-header-pad-max)
+	);
+}
+
+.cardHeaderCstFront {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: clamp(
+		var(--card-header-gap-min),
+		var(--card-header-gap-fluid),
+		var(--card-header-gap-max)
+	);
+	width: 100%;
+	padding: clamp(
+			var(--card-header-pad-min),
+			var(--card-header-pad-fluid),
+			var(--card-header-pad-max)
+		)
+		clamp(
+			var(--card-header-pad-min),
+			var(--card-header-pad-fluid),
+			var(--card-header-pad-max)
+		);
+	font-size: clamp(
+		var(--card-header-font-min),
+		var(--card-header-font-fluid),
+		var(--card-header-font-max)
+	);
+	font-weight: bold;
+}
+
+.customCardImgTopFront {
+	width: clamp(
+		var(--card-img-front-min),
+		var(--card-img-front-fluid),
+		var(--card-img-front-max)
+	) !important;
+	height: clamp(
+		var(--card-img-front-min),
+		var(--card-img-front-fluid),
+		var(--card-img-front-max)
+	) !important;
+	max-width: 75px;
+	max-height: 75px;
+}
+
+.backCard {
+	transform: rotateY(180deg);
+	position: relative;
+}
+
+.cardHeaderCstBack {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: clamp(
+		var(--card-header-gap-min),
+		var(--card-header-gap-fluid),
+		var(--card-header-gap-max)
+	);
+	width: 100%;
+	padding: clamp(
+			var(--card-header-pad-min),
+			var(--card-header-pad-fluid),
+			var(--card-header-pad-max)
+		)
+		clamp(
+			var(--card-header-pad-min),
+			var(--card-header-pad-fluid),
+			var(--card-header-pad-max)
+		);
+	font-size: clamp(
+		var(--card-header-font-min),
+		var(--card-header-font-fluid),
+		var(--card-header-font-max)
+	);
+	font-weight: bold;
+}
+
+.frontCard,
+.backCard {
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+}
+
+.customCardImgTopBack {
+	width: clamp(
+		var(--card-img-back-min),
+		var(--card-img-back-fluid),
+		var(--card-img-back-max)
+	) !important;
+	height: clamp(
+		var(--card-img-back-min),
+		var(--card-img-back-fluid),
+		var(--card-img-back-max)
+	) !important;
+}
+
+.listSkills {
+	width: fit-content; /* Shrink to fit the content */
+	margin: 0 auto; /* Center the list container horizontally */
+	text-align: left;
+	font-size: clamp(
+		var(--list-skill-font-min),
+		var(--list-skill-font-fluid),
+		var(--list-skill-font-max)
+	);
+	font-weight: bold;
+	margin-top: clamp(
+		var(--list-skill-margin-top-min),
+		var(--list-skill-margin-top-fluid),
+		var(--list-skill-margin-top-max)
+	);
+}
+
+.listGroupItem {
+	border: none !important;
+	background: none !important;
+}
+
+.skillLogo {
+	width: clamp(
+		var(--skill-logo-min),
+		var(--skill-logo-fluid),
+		var(--skill-logo-max)
+	);
+	height: clamp(
+		var(--skill-logo-min),
+		var(--skill-logo-fluid),
+		var(--skill-logo-max)
+	);
+	margin-right: clamp(
+		var(--skill-logo-margin-right-min),
+		var(--skill-logo-margin-right-fluid),
+		var(--skill-logo-margin-right-max)
+	);
+	vertical-align: middle;
+}
+
+.nodeLogo {
+	filter: brightness(0);
+}

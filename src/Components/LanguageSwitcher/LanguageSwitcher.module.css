@@ -1,0 +1,39 @@
+.languageSwitcher {
+	display: flex;
+	bottom: 0;
+	right: 5px;
+	position: absolute;
+	z-index: 1;
+}
+
+.languageButtons {
+	all: unset;
+	color: var(--lang-btn-color);
+	font-weight: bold;
+	font-size: var(--lang-btn-font-size);
+	text-align: center;
+	background-color: var(--lang-btn-bg);
+	width: var(--lang-btn-size);
+	height: var(--lang-btn-size);
+}
+
+.languageButtons:active {
+	transform: scale(var(--lang-btn-active-scale));
+	box-shadow: var(--lang-btn-active-shadow);
+}
+
+.languageButtonClicked {
+	transform: scale(var(--lang-btn-clicked-scale));
+	box-shadow: var(--lang-btn-clicked-shadow);
+	background-color: var(--lang-btn-clicked-bg);
+}
+
+@media (min-width: 1025px) {
+	.languageSwitcher {
+		display: flex;
+		bottom: 0;
+		left: 5px;
+		position: absolute;
+		z-index: 1;
+	}
+}

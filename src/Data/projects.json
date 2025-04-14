@@ -1,7 +1,7 @@
 [
 	{
 		"id": 1,
-		"title": "My Website",
+		"title": "Portfolio",
 		"logo": "my-website.gif",
 		"summary": " This website that I built to showcase my skills and present my profile.",
 		"description": "I wanted to build a website that would represent me and showcase my skills and my profile. I decided to code my own website from scratch, using React, Vite and TypeScript.",

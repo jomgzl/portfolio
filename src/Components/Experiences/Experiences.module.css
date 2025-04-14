@@ -1,0 +1,36 @@
+.containerGeneralExperiences {
+	background-color: var(--secondary-color);
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	/* Use global container padding tokens */
+	padding-left: clamp(var(--pad-min-left), var(--pad-fluid-left), var(--pad-max-left));
+	padding-right: clamp(var(--pad-min-right), var(--pad-fluid-right), var(--pad-max-right));
+	/* For bottom padding, we use our Experience long-padding tokens */
+	padding-bottom: clamp(var(--experience-long-padding-min), var(--experience-long-padding-fluid), var(--experience-long-padding-max));
+  }
+  
+  .experiencesContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	padding: 3% 25%;
+	width: 100%;
+	min-width: 0;
+  }
+  
+  .experiencesTitle {
+	display: block;
+	font-size: clamp(var(--title-min), var(--title-fluid), var(--title-max));
+	font-weight: bold;
+	color: white;
+	margin-block-start: 0.83em;
+	margin-block-end: 0.83em;
+	width: 100%;
+  }
+  
+  .experiences {
+	width: 100%;
+  }
+  

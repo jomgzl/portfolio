@@ -1,0 +1,102 @@
+.navBarSection1,
+.titles {
+	display: none;
+}
+
+.mobileNavbarHeader {
+	background-color: var(--mobile-navbar-header-bg);
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.menuMobileNav {
+	position: var(--menu-overlay-position);
+	top: var(--menu-overlay-top);
+	height: var(--menu-overlay-height);
+	background-color: var(--menu-overlay-bg);
+	z-index: var(--menu-overlay-z-index);
+	width: var(--menu-overlay-width);
+	border-right: var(--menu-overlay-border-right);
+	border-bottom: var(--menu-overlay-border-bottom);
+	border-radius: var(--menu-overlay-border-radius);
+	transform: var(--menu-overlay-transform-closed);
+	transition: var(--menu-overlay-transition);
+}
+
+.menuMobileNav.open {
+	transform: var(--menu-overlay-transform-open);
+	box-shadow: var(--menu-overlay-box-shadow);
+}
+
+.burgerPosition {
+	padding-top: var(--burger-position-padding-top);
+	padding-bottom: var(--burger-position-padding-bottom);
+}
+
+.burger {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: var(--burger-width);
+	height: var(--burger-height);
+	padding-left: var(--burger-padding-left);
+	cursor: pointer;
+}
+
+.bar {
+	width: var(--burger-bar-width);
+	height: var(--burger-bar-height);
+	background-color: var(--burger-bar-bg);
+	border-radius: var(--burger-bar-border-radius);
+}
+
+.barOpen {
+	width: var(--burger-bar-width);
+	height: var(--burger-bar-height);
+	background-color: var(--burger-bar-open-bg);
+	border-radius: var(--burger-bar-border-radius);
+}
+
+.burgerLinks {
+	display: flex;
+	flex-direction: column;
+	width: var(--burger-links-width);
+	padding-left: var(--burger-links-padding-left);
+	gap: var(--burger-links-gap);
+}
+
+.aboutMeBurger,
+.skillsBurger,
+.projectsBurger,
+.workExperiencesBurger {
+	color: black;
+	font-size: var(--burger-link-font-size);
+}
+
+@media (min-width: 1025px) {
+	.mobileNavbarHeader,
+	.menuMobileNav {
+		display: none;
+	}
+
+	.navbarSection1 {
+		position:relative;
+		display: grid;
+		grid-template-columns: var(--navbar-grid-columns);
+		padding-top: var(--navbar-padding-top);
+		padding-bottom: var(--navbar-padding-bottom);
+		background-color: var(--navbar-bg);
+	}
+
+	.titles {
+		font-size: var(--navbar-font-size);
+	}
+
+	.aboutMe,
+	.skills,
+	.projects,
+	.workExperiences {
+		justify-self: var(--navbar-link-justify);
+	}
+}

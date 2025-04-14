@@ -1,0 +1,79 @@
+.containerGeneralPresentation {
+	background-color: var(--primary-color); /* To test f4f4f9 */
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding-left: clamp(
+		var(--pad-min-left),
+		var(--pad-fluid-left),
+		var(--pad-max-left)
+	);
+	padding-right: clamp(
+		var(--pad-min-right),
+		var(--pad-fluid-right),
+		var(--pad-max-right)
+	);
+}
+
+.containerPresentation {
+	display: flex;
+	justify-content: flex-start;
+	min-height: 70vh;
+}
+
+.boxPresentation {
+	opacity: 0;
+	transform: translateY(-30px);
+	transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.animatePresentation {
+	opacity: 1;
+	transform: translateY(5px);
+}
+
+.presentation {
+	display: flex;
+	flex-direction: column;
+	gap: clamp(var(--gap-min), var(--gap-fluid), var(--gap-max));
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.fullName,
+.role {
+	font-size: clamp(
+		var(--presentation-title-min),
+		var(--presentation-title-fluid),
+		var(--presentation-title-max)
+	);
+	font-weight: bold;
+}
+
+.logos {
+	display: flex;
+	gap: clamp(
+		var(--presentation-gap-min),
+		var(--presentation-gap-fluid),
+		var(--presentation-gap-max)
+	);
+}
+
+.linkedinLogo,
+.githubLogo {
+	width: clamp(
+		var(--presentation-logo-min),
+		var(--presentation-logo-fluid),
+		var(--presentation-logo-max)
+	);
+	height: clamp(
+		var(--presentation-logo-min),
+		var(--presentation-logo-fluid),
+		var(--presentation-logo-max)
+	);
+}
+
+/* Override for specific logo effects */
+.githubLogo {
+	filter: brightness(0%);
+}

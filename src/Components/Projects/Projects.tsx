@@ -1,4 +1,4 @@
-import "../CSS/Projects.css";
+import styles from "./Projects.module.css";
 import Project from "./Project";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -26,15 +26,15 @@ function Projects({ listOfProjects }: Props) {
 	};
 
 	return (
-		<div id="projects" className="container-general-projects">
-			<div className="container projects-container">
-				<h1 className="projects-title">{t("side-projects")}</h1>
+		<div id="projects" className={styles.containerGeneralProjects}>
+			<div className={`container ${styles.projectsContainer}`}>
+				<h1 className={styles.projectsTitle}>{t("side-projects")}</h1>
 				{listOfProjects.map((project) => (
 					<Project
 						key={project.id}
 						onClick={() => handleProjectClick(project)}
 						{...project}
-					></Project>
+					/>
 				))}
 			</div>
 		</div>

@@ -1,7 +1,6 @@
-import "../CSS/Presentation.css";
+import styles from "./Presentation.module.css";
 import { useState, useEffect } from "react";
 import { useTranslation, Trans } from "react-i18next";
-import LanguageSwitcher from "./LanguageSwitcher";
 
 function Presentation() {
 	const [show, setShow] = useState(false);
@@ -12,29 +11,28 @@ function Presentation() {
 	}, []);
 
 	return (
-		<div className="container-general-presentation">
-			<LanguageSwitcher></LanguageSwitcher>
+		<div className={styles.containerGeneralPresentation}>
 			<div
-				className={`container container-presentation box-presentation ${
-					show ? "animate-presentation" : ""
+				className={`container ${styles.containerPresentation} ${styles.boxPresentation} ${
+					show ? styles.animatePresentation : ""
 				}`}
 			>
-				<div className="presentation">
-					<h1 className="full-name">Joseph Mogaizel</h1>
-					<h1 className="role">
+				<div className={styles.presentation}>
+					<h1 className={styles.fullName}>Joseph Mogaizel</h1>
+					<h1 className={styles.role}>
 						<Trans i18nKey="role" />
 					</h1>
-					<div className="logos">
+					<div className={styles.logos}>
 						<a href="https://www.linkedin.com/in/josephmogaizel/">
 							<img
-								className="linkedin-logo"
+								className={styles.linkedinLogo}
 								src="linkedIn.png"
 								alt="LinkedIn"
 							/>
 						</a>
 						<a href="https://github.com/Jomgzl">
 							<img
-								className="github-logo"
+								className={styles.githubLogo}
 								src="github.png"
 								alt="GitHub"
 							/>

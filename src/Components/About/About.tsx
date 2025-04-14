@@ -1,4 +1,4 @@
-import "../CSS/About.css";
+import styles from "./About.module.css";
 import { useState, useEffect } from "react";
 import { useTranslation, Trans } from "react-i18next";
 
@@ -11,17 +11,17 @@ function About() {
 	}, []);
 
 	return (
-		<div id="about-me" className="container-general-about">
+		<div id="about-me" className={styles.containerGeneralAbout}>
 			<div
-				className={`container container-about-me box-about ${
-					show ? "animate-about" : ""
-				}`}
+				className={`container ${styles.containerAboutMe} ${
+					styles.boxAbout
+				} ${show ? styles.animateAbout : ""}`}
 			>
-				<div className="about">
-					<h1 className="about-title">
+				<div className={styles.about}>
+					<h1 className={styles.aboutTitle}>
 						<Trans i18nKey="about-title" />
 					</h1>
-					<p className="about-paragraph">
+					<p className={styles.aboutParagraph}>
 						<Trans i18nKey="about" />
 					</p>
 				</div>

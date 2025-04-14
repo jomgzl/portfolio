@@ -33,7 +33,8 @@
 	},
 	"projects": {
 		"1": {
-			"title": "Mon Site",
+			"title": "Portfolio",
+			"title-details": "Portfolio",
 			"summary": "Ce site web que j'ai créé pour présenter mon profil et mes compétences.",
 			"description": " Je voulais <strong>créer un site web</strong> qui <strong>me représente</strong> et qui présente mes <strong>compétences</strong> et mon <strong>profil</strong>. J'ai décidé de <strong>coder</strong> mon <strong>propre site web de zéro</strong>, en utilisant <strong>React</strong>, <strong>Vite</strong> et <strong>TypeScript</strong>.",
 			"technologies": ["React", "Vite", "TypeScript"],
@@ -41,6 +42,7 @@
 		},
 		"2": {
 			"title": "TaskApp",
+			"title-details": "TaskApp",
 			"summary": "J'ai créé un gestionnaire de tâches permettant une organisation quotidienne fluide.",
 			"description": "J'ai décidé de <strong>coder de zéro</strong> une <strong>application de gestion de tâches</strong> qui est, <strong>simple</strong>, <strong>directe</strong> et <strong>efficace</strong>. J'ai utilisé <strong>Node.js</strong>, <strong>Express.js</strong> et <strong>MySQL2</strong> pour la <strong>créer</strong>.",
 			"technologies": ["Node.js", "Express.js", "MySQL2"],

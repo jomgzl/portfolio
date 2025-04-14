@@ -1,0 +1,112 @@
+.projectContainer {
+	background-color: var(--project-bg, #fff8f0);
+	width: 100%;
+	height: 40%;
+	gap: clamp(
+		var(--project-gap-min),
+		var(--project-gap-fluid),
+		var(--project-gap-max)
+	);
+	border-radius: var(--project-border-radius);
+	display: flex;
+	align-items: center;
+	padding: clamp(
+			var(--project-pad-vertical-min),
+			var(--project-pad-vertical-fluid),
+			var(--project-pad-vertical-max)
+		)
+		clamp(
+			var(--project-pad-horizontal-min),
+			var(--project-pad-horizontal-fluid),
+			var(--project-pad-horizontal-max)
+		);
+	margin-bottom: clamp(
+		var(--project-margin-bottom-min),
+		var(--project-margin-bottom-fluid),
+		var(--project-margin-bottom-max)
+	);
+	transition-duration: 0.3s;
+}
+
+.projectContainer:hover {
+	transform: translateY(-0.625rem); /* -10px approximated */
+	transition-duration: 0.3s;
+	box-shadow: 0px -1px 5px lightgray, -0.625rem 0.625rem 0.625rem gray,
+		0.625rem 0.625rem 0.625rem gray;
+	cursor: pointer;
+}
+
+.projectLogo {
+	width: clamp(
+		var(--project-logo-min),
+		var(--project-logo-fluid),
+		var(--project-logo-max)
+	);
+	height: clamp(
+		var(--project-logo-min),
+		var(--project-logo-fluid),
+		var(--project-logo-max)
+	);
+	mix-blend-mode: multiply;
+}
+
+.projectPresentation {
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+}
+
+.projectTitle {
+	font-size: clamp(
+		var(--project-title-font-min),
+		var(--project-title-font-fluid),
+		var(--project-title-font-max)
+	);
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.projectDescription {
+	font-size: clamp(
+		var(--project-desc-font-min),
+		var(--project-desc-font-fluid),
+		var(--project-desc-font-max)
+	);
+	max-width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.projectTechnologies {
+	display: none;
+}
+
+@media (min-width: 1025px) {
+	.projectTechnologies {
+		display: flex;
+		gap: clamp(var(--gap-min), var(--gap-fluid), var(--gap-max));
+	}
+	.projectTechnology {
+		background-color: black;
+		color: white;
+		font-size: clamp(
+			var(--project-tech-font-min),
+			var(--project-tech-font-fluid),
+			var(--project-tech-font-max)
+		);
+		border-radius: 5rem;
+		padding: clamp(
+				var(--project-tech-pad-vertical-min),
+				var(--project-tech-pad-vertical-fluid),
+				var(--project-tech-pad-vertical-max)
+			)
+			clamp(
+				var(--project-tech-pad-horizontal-min),
+				var(--project-tech-pad-horizontal-fluid),
+				var(--project-tech-pad-horizontal-max)
+			);
+	}
+}
