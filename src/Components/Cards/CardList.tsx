@@ -21,7 +21,8 @@ interface Props {
 
 function CardList({ listOfSkills }: Props) {
 	const [show, setShow] = useState(false);
-	const { t } = useTranslation();
+	
+	useTranslation();
 
 	useEffect(() => {
 		setShow(true);

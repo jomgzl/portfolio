@@ -4,7 +4,8 @@ import { useTranslation, Trans } from "react-i18next";
 
 function About() {
 	const [show, setShow] = useState(false);
-	const { t } = useTranslation();
+
+	useTranslation();
 
 	useEffect(() => {
 		setShow(true);
