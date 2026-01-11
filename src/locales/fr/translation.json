@@ -58,9 +58,20 @@
 		}
 	},
 	"experiences": {
-		"1": {
+			"1": {
+			"title": "Développeur Web @Highcast",
+			"date": "sept. 2025 - aujourd'hui",
+			"description": "Développer https://www.highcast.co/.",
+			"tasks": {
+				"Built the website highcast.co from scratch on Webflow.": "Développer le site highcast.co de zéro sur Webflow.",
+				"Implemented SEO, AEO and setup best practices.": "Implémenter les meilleures pratiques de SEO, AEO et de configuration.",
+				"Collaborated with Marketing to enable autonomous content publishing.": "Collaborer avec Marketing pour créer la publication de contenu autonome."
+			},
+			"skills": ["Webflow", "HTML/CSS", "SEO", "AEO"]
+		},
+		"2": {
 			"title": "Développeur Full Stack @Biteright",
-			"date": "jan. 2025 - aujourd'hui",
+			"date": "jan. 2025 - sept. 2025",
 			"description": "Développer une application de nutrition.",
 			"tasks": {
 				"Developed 60% of the front-end, according to the UX/UI designs.": "Développer 60 % du front-end, selon les designs UX/UI.",
@@ -69,7 +80,7 @@
 			},
 			"skills": ["React Native", "AI", "Github"]
 		},
-		"2": {
+		"3": {
 			"title": "Développeur Full Stack @Efficy",
 			"date": "jan. 2022 - dec. 2022",
 			"description": "Concevoir et développer plusieurs projets personnalisés à divers clients.",
@@ -80,7 +91,7 @@
 			},
 			"skills": ["Node.js", "JavaScript", "Clean Code", "MSSQL", "SVN"]
 		},
-		"3": {
+		"4": {
 			"title": "Développeur Full Stack @BSynchro",
 			"date": "oct. 2021 - dec. 2021",
 			"description": "Développer une version bêta d'un site répertoriant des films.",

@@ -37,12 +37,10 @@
 }
 
 .experienceInformation {
-	display: flex;
-	gap: clamp(
-		var(--experience-info-gap-min),
-		var(--experience-info-gap-fluid),
-		var(--experience-info-gap-max)
-	);
+	display: grid;
+	grid-template-columns: 20rem 3rem 1fr;
+	justify-items: center;
+	align-items: center;
 	color: white;
 }
 
@@ -181,11 +179,7 @@
 
 @media (min-width: 1025px) {
 	.experienceInformation {
-		gap: clamp(
-			var(--experience-info-gap-min),
-			var(--experience-info-gap-fluid),
-			var(--experience-info-gap-max)
-		);
+		gap: 2rem;
 	}
 
 	.companyLogo,

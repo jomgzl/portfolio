@@ -62,8 +62,19 @@
 	},
 	"experiences": {
 		"1": {
+			"title": "Web Developer @Highcast",
+			"date": "sept. 2025 - now",
+			"description": "Developed https://www.highcast.co/.",
+			"tasks": {
+				"Built the website highcast.co from scratch on Webflow.": "Built the website highcast.co from scratch on Webflow.",
+				"Implemented SEO, AEO and setup best practices.": "Implemented SEO, AEO and setup best practices.",
+				"Collaborated with Marketing to enable autonomous content publishing.": "Collaborated with Marketing to enable autonomous content publishing."
+			},
+			"skills": ["Webflow", "HTML/CSS", "SEO", "AEO"]
+		},
+		"2": {
 			"title": "Full Stack Developer @Biteright",
-			"date": "jan. 2025 - now",
+			"date": "jan. 2025 - sept. 2025",
 			"description": "Developed a nutrition app.",
 			"tasks": {
 				"Developed 60% of the front-end, according to the UX/UI designs.": "Developed 60% of the front-end, according to the UX/UI designs.",
@@ -72,7 +83,7 @@
 			},
 			"skills": ["React Native", "AI", "Github"]
 		},
-		"2": {
+		"3": {
 			"title": "Full Stack Developer @Efficy",
 			"date": "jan. 2022 - dec. 2022",
 			"description": "Crafted multiple projects tailored for various customers.",
@@ -83,7 +94,7 @@
 			},
 			"skills": ["Node.js", "JavaScript", "Clean Code", "MSSQL", "SVN"]
 		},
-		"3": {
+		"4": {
 			"title": "Full Stack Developer @BSynchro",
 			"date": "oct. 2021 - dec. 2021",
 			"description": "Developed a beta version movie project.",

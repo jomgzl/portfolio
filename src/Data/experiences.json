@@ -1,8 +1,22 @@
 [
 	{
 		"id": 1,
+		"title": "Web Developer @Highcast",
+		"date": "sept. 2025 - now",
+		"logo": "highcast.svg",
+		"description": "Developed https://www.highcast.co/.",
+		"tasks": [
+			"Built the website highcast.co from scratch on Webflow.",
+			"Implemented SEO, AEO and setup best practices.",
+			"Collaborated with Marketing to enable autonomous content publishing."
+
+		],
+		"skills": ["Webflow", "HTML/CSS", "SEO", "AEO"]
+	},
+	{
+		"id": 2,
 		"title": "Full Stack Developer @Biteright",
-		"date": "jan. 2025 - now",
+		"date": "sept. 2025 - now",
 		"logo": "biteright.svg",
 		"description": "Developed a nutrition app.",
 		"tasks": [
@@ -13,7 +27,7 @@
 		"skills": ["React Native", "AI", "Github"]
 	},
 	{
-		"id": 2,
+		"id":3,
 		"title": "Full Stack Developer @Efficy",
 		"date": "jan. 2022 - dec. 2022",
 		"logo": "efficy.svg",
@@ -26,7 +40,7 @@
 		"skills": ["Node.js", "JavaScript", "Clean Code", "MSSQL", "SVN"]
 	},
 	{
-		"id": 3,
+		"id": 4,
 		"title": "Full Stack Developer @BSynchro",
 		"date": "oct. 2021 - dec. 2021",
 		"logo": "bsynchro.svg",
