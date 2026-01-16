@@ -66,11 +66,12 @@
 			"date": "sept. 2025 - now",
 			"description": "Developed https://www.highcast.co/.",
 			"tasks": {
+				"Lead the project end-to-end, scoping, planning, coordination, delivery": "Lead the project end-to-end, scoping, planning, coordination, delivery",
 				"Built the website highcast.co from scratch on Webflow.": "Built the website highcast.co from scratch on Webflow.",
 				"Implemented SEO, AEO and setup best practices.": "Implemented SEO, AEO and setup best practices.",
 				"Collaborated with Marketing to enable autonomous content publishing.": "Collaborated with Marketing to enable autonomous content publishing."
 			},
-			"skills": ["Webflow", "HTML/CSS", "SEO", "AEO"]
+			"skills": ["Project management", "Webflow", "HTML/CSS", "SEO", "AEO"]
 		},
 		"2": {
 			"title": "Full Stack Developer @Biteright",

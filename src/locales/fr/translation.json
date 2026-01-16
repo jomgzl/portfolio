@@ -58,16 +58,17 @@
 		}
 	},
 	"experiences": {
-			"1": {
+		"1": {
 			"title": "Développeur Web @Highcast",
 			"date": "sept. 2025 - aujourd'hui",
 			"description": "Développer https://www.highcast.co/.",
 			"tasks": {
+				"Lead the project end-to-end, scoping, planning, coordination, delivery": "Piloter le projet (end-to-end), cadrage, planification, coordination, livraison",
 				"Built the website highcast.co from scratch on Webflow.": "Développer le site highcast.co de zéro sur Webflow.",
 				"Implemented SEO, AEO and setup best practices.": "Implémenter les meilleures pratiques de SEO, AEO et de configuration.",
 				"Collaborated with Marketing to enable autonomous content publishing.": "Collaborer avec Marketing pour créer la publication de contenu autonome."
 			},
-			"skills": ["Webflow", "HTML/CSS", "SEO", "AEO"]
+			"skills": ["Gestion de projet", "Webflow", "HTML/CSS", "SEO", "AEO"]
 		},
 		"2": {
 			"title": "Développeur Full Stack @Biteright",
