@@ -3,7 +3,8 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	width: 100%;
+	width: 100vw;
+	height: 100dvh;
 	/* Using tokens for horizontal padding (percentages are used directly) */
 	padding-top: var(--project-details-pad-top);
 	padding-left: var(--project-details-pad-left);
@@ -87,12 +88,4 @@ p {
 
 .bold {
 	font-weight: bold;
-}
-
-@media (min-width: 1025px) {
-	.containerGeneralProjectDetails {
-		height: 100vh;
-		padding-top: 0%;
-		padding-bottom: 0%;
-	}
 }
