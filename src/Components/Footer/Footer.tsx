@@ -4,7 +4,7 @@ function Footer() {
 	return (
 		<footer className={`container ${styles.footerContainer}`}>
 			<p className={styles.versionCopyright}>
-				v1.0.0 - © 2025 - Joseph Mogaizel
+				v1.0.1 - © 2026 - Joseph Mogaizel
 			</p>
 		</footer>
 	);
