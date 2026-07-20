@@ -1,5 +1,6 @@
 .experienceMaster {
 	border-bottom: 1px solid #2a2a2a;
+	width: 100%;
 }
 
 .shortPadding {
@@ -34,14 +35,15 @@
 		var(--experience-head-pad-bottom-max)
 	);
 	min-width: 0;
+	width: 100%;
 }
 
 .experienceInformation {
 	display: grid;
-	grid-template-columns: 20rem 3rem 1fr;
-	justify-items: center;
+	grid-template-columns: 1fr 1fr 1fr;
 	align-items: center;
 	color: white;
+	width: 100%;
 }
 
 .experienceDate {
@@ -155,6 +157,10 @@
 	}
 
 	.experienceSkill {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align:center;
 		color: white;
 		font-size: clamp(
 			var(--experience-skill-font-min),
@@ -162,7 +168,7 @@
 			var(--experience-skill-font-max)
 		);
 		border: 1px solid white;
-		border-radius: 5rem;
+		border-radius: 2rem;
 		padding: 0.15rem 0.5rem;
 	}
 
@@ -180,6 +186,14 @@
 @media (min-width: 1025px) {
 	.experienceInformation {
 		gap: 2rem;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.containerLogo {
+		display: flex;
+		justify-content: center;
+		justify-self: end;
+		width: 50px;
 	}
 
 	.companyLogo,
@@ -202,28 +216,6 @@
 			var(--company-logo-height-max)
 		);
 		filter: invert(1);
-	}
-
-	.experienceSkillsHead {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.experienceSkills {
-		display: flex;
-		gap: clamp(0.5rem, calc(0.5rem + 0.2vw), 0.75rem);
-	}
-
-	.experienceSkill {
-		color: white;
-		font-size: clamp(
-			var(--experience-skill-font-min),
-			var(--experience-skill-font-fluid),
-			var(--experience-skill-font-max)
-		);
-		border: 1px solid white;
-		border-radius: 5rem;
-		padding: 0.15rem 0.5rem;
 	}
 
 	.experienceDetails h5,
