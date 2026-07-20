@@ -58,7 +58,7 @@ function Experience({ id, logo, tasks, skills }: Props) {
       >
         <div className={styles.experienceDescriptionHead}>
           <div>
-            <img src="" alt="" />
+            <img src="null" alt="" />
             <h5>Description</h5>
           </div>
           <p className={styles.experienceDescription}>
